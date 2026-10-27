@@ -1,0 +1,11 @@
+Types of DBMS :-
+=====================
+Relational DBMS
+Non-Relational DBMS(bigtable,dynamodb, mongodb)
+Heirarchial DBMS
+Network DBMS 
+Object Oriented DBMS (in research areas, reusability of thhe expressions)
+
+SQlite:- In memory databases , Temp data(Username, passwords,recent search in browser)
+DBMS always run on 3306 port number 
+

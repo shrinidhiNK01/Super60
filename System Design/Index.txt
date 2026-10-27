@@ -1,0 +1,47 @@
+Why System Design :-
+1)Slow Process of application when multiple users   --------------  LLD and DSA
+2)Cannot hold load of multiple users 
+3)Users are Increasing   -------------------------  Vertical Scaling(Instead of addiing new server , update the current server effeciently)
+4)users high waiting time -------------------------- Horizontal Scaling(Add multiple servers, add multiple database)
+5)Need of Centralized data
+6)Utilize Underutilized counters   ------------------- Load Balancer(Distribute the load to multiple servers)
+
+all of the apps use system design 
+
+
+Components of System design:-
+================================
+1)Databases :- Nosql(MongoDB,AWS,Redis), SQL(MySQL,PostgreSQL,AWS)
+2)API's Application Code (End Points) :- GET 
+                                         POST 
+                                         PUT
+                                         DELETE
+                                         PATCH
+  HTTP,TCP,IP
+3)Client Applications :- Cache(Frequently used data are stored here)
+                        user <-----> Server Application Code <------> Server 
+                                         ^             ^
+                                         |             |
+                        server Appcode<--|             |-----> Cache
+4)Cache 
+5)Load balancers
+6)Message Queue
+                                                            |---------->|Server 1|------>Database 1 
+7)Monitoring and Logs  :-   Users ---- Load Balancing ------|
+                                                            |---------->|Server 2|------>Database 2
+                                                                            |
+                                                                            |--------------|Message Queues|-------
+
+
+
+Application Types:-
+========================
+Same no of users | but still there exists little latency(taking time to respond)
+same network     |
+
+1)Data Intensive Application  ------------- Data(Store,Gather,Move,add)
+            ---------Database Responsive 
+            ---------Network calls 
+            ---------servers
+            
+2)Compute Intensive Application 
